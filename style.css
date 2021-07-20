@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+.stock-container{
+    width: 950px;
+    max-width: 100%;
+    border: 0px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.stock-container .form-container{
+    width: 550px;
+    max-width: 100%;
+    height: 500px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #4A55C6;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.form-container h2{
+    color: #fff;
+    text-align: center;
+}
+.form-container form{
+    margin: 20px 0;
+    padding: 10px;
+    text-align: center;
+}
+.form-container form input{
+    width: 90%;
+    padding: 12px;
+    /* display: block; */
+    margin: 5px;
+    background-color: #28308da4;
+    border: none;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.055) !important;
+    color: #fff;
+    border-radius: 5px;
+}
+.form-container form input:focus{
+    outline: none;
+}
+::placeholder{
+    font-size: 0.9rem;
+    color: rgb(139, 134, 134);
+}
+.form-container form button{
+    padding: 10px 25px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.stock-container .background{
+    background: url('/pexels-olya-kobruseva-5561911.jpg');
+    background-size: cover;
+    width: 350px;
+    max-width: 100%;
+    height: 500px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.output{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+.loss-info{
+    padding: 20px;
+    background-color: #28308da4;
+    width: 90%;
+    color: #fff;
+}
+
+@media(max-width: 915px){
+    .stock-container .background{
+        width: 100%;
+        margin: 10px;
+        border-radius: 10px;
+    }
+    .stock-container .form-container{
+        width: 100%;
+        margin: 10px;
+        border-radius: 10px;
+    }
+    .container{
+        padding: 10px 0;
+    }
+}
