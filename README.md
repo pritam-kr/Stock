@@ -24,3 +24,8 @@
   - Current stock price
   - stock quantity
   - Enter the stock price, when you purchased it
+
+
+
+
+                
